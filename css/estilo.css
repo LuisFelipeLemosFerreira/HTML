@@ -1,0 +1,160 @@
+/* estilo.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo preto e texto branco */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Imagem centralizada com borda branca sutil */
+img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    border: 2px solid #ffffff80;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+/* Títulos h2 */
+h2 {
+    color: #ffffff;
+    margin: 30px 0 15px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+/* Links com cor clara e hover */
+a {
+    color: #66ccff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #99ddff;
+    text-decoration: underline;
+}
+
+/* Tabela com fundo escuro */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #111111;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #333333;
+    color: #ffffff;
+}
+
+th {
+    background-color: #222222;
+}
+
+tr:hover {
+    background-color: #333333;
+}
+
+/* Formulário com fundo escuro */
+form {
+    background-color: #111111;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: #eeeeee;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #66ccff;
+    outline: none;
+    background-color: #333333;
+}
+
+button {
+    background-color: #66ccff;
+    color: #000000;
+    border: none;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #99ddff;
+}
+
+/* Div de informações */
+div {
+    background-color: #111111;
+    padding: 15px 20px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+div p {
+    margin-bottom: 10px;
+}
+
+/* Parágrafos gerais */
+main p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    color: #ffffff;
+}
