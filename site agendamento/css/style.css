@@ -1,0 +1,209 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo com leve degradê rosado */
+body {
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  color: #4a2c4d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Foto topo */
+.foto-topo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #d81b60;
+  box-shadow: 0 8px 20px rgba(216, 27, 96, 0.4);
+  margin-bottom: 30px;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  color: #880e4f;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(255, 192, 203, 0.6);
+}
+
+/* Formulário */
+form {
+  background-color: #fff0f6;
+  width: 100%;
+  max-width: 460px;
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(216, 27, 96, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Labels */
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #6a1b4d;
+  letter-spacing: 0.03em;
+}
+
+/* Inputs e textarea e select */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  margin-top: 8px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 2px solid #f48fb1;
+  border-radius: 15px;
+  background-color: #fff5f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline-offset: 3px;
+  resize: vertical;
+  color: #4a2c4d;
+  font-weight: 600;
+  box-shadow: inset 0 2px 5px rgba(255, 192, 203, 0.25);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #d81b60;
+  box-shadow: 0 0 10px #d81b60aa;
+  outline: none;
+}
+
+/* Botão enviar */
+button[type="submit"] {
+  margin-top: 20px;
+  background: linear-gradient(45deg, #d81b60, #880e4f);
+  color: white;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 16px 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 6px 15px rgba(216, 27, 96, 0.6);
+  transition: background 0.4s ease, transform 0.3s ease;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(45deg, #880e4f, #d81b60);
+  transform: scale(1.05);
+}
+
+/* Links redes sociais */
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.redes-sociais a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #e492ac;
+  color: #880e4f;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(216, 27, 96, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
+.redes-sociais a img {
+  width: 18px;
+  height: 18px;
+  filter: invert(30%) sepia(60%) saturate(200%) hue-rotate(320deg);
+  transition: filter 0.3s ease;
+}
+
+.redes-sociais a:hover {
+  background: #d81b60;
+  color: white;
+  box-shadow: 0 6px 15px rgba(216, 27, 96, 0.7);
+}
+
+.redes-sociais a:hover img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
+  transition: filter 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  form {
+    max-width: 100%;
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+.horarios-container {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.botao-horario {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  min-width: 70px;
+  text-align: center;
+}
+
+.botao-horario.livre {
+  background-color: #28a745; /* verde */
+}
+
+.botao-horario.livre:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+.botao-horario.ocupado {
+  background-color: #dc3545; /* vermelho */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.botao-horario.selecionado {
+  box-shadow: 0 0 8px 3px #007bff;
+  transform: scale(1.15);
+}

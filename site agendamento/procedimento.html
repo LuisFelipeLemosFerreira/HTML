@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agendamento Salão de Beleza</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="foto.ico" type="image/x-icon" />
+
+</head>
+<body>
+
+  <img src="M.jpg" alt="Foto do salão" class="foto-topo" />
+
+  <h1>Agendamento</h1>
+
+  <form id="form-agendamento">
+
+    <label for="nome">Nome:
+      <input type="text" id="nome" name="nome" required />
+    </label>
+
+    <label for="email">Email:
+      <input type="email" id="email" name="email" required />
+    </label>
+    
+    <label for="procedimento">Procedimento:
+      <select id="procedimento" name="procedimento" required>
+        <option value="" disabled selected>Selecione um procedimento</option>
+        <option value="limpeza de pele">Limpeza de Pele</option>
+        <option value="brown lamination">Brown Lamination</option>
+        <option value="extensao de cilios">Extensão de Cílios</option>
+        <option value="sobrancelha">Fazer a Sobrancelha</option>
+      </select>
+    </label>
+
+    <label for="data">Data:
+      <input type="date" id="data" name="data" required />
+    </label>
+
+    <div id="horarios" class="horarios-container"></div>
+ 
+
+   <label for="hora">Hora:
+      <input type="time" id="hora" name="hora" readonly required />
+   </label>
+
+   
+    <div class="redes-sociais">
+      <a href="https://wa.me/5549998100360" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <img src="zap.jpg" alt="WhatsApp" />
+        WhatsApp
+      </a>
+      <a href="https://www.instagram.com/cris_lemosestetica/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="insta.jpg" alt="Instagram" />
+        Instagram
+      </a>
+    </div>
+    <button type="submit">Agendar</button>
+  </form>
+  <script src="procedimento.js"></script>
+</body>
+</html>
